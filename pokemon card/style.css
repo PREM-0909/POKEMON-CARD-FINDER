@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(227, 82%, 70%);
+    font-family: "poppins", sans-serif;
+    height: 600px;
+    width: 1200px;
+    color: rgb(2, 2, 2);
+
+}
+
+#pokemon {
+    text-align: centre;
+    font-family: "poppins", sans-serif;
+    height: 27px;
+    padding: 5px;
+    width: 20%;
+    border-radius: 7px;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 35px rgb(70, 70, 144);
+    border-radius: 15px;
+    background: radial-gradient(circle at 50% 0%, rgb(52, 52, 91) 45%, white 36%);
+    height: 80%;
+    width: 30%;
+
+}
+
+
+.head h5 {
+
+    background-color: beige;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 9px;
+}
+
+
+.head {
+    text-align: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: beige;
+    margin-left: -2%;
+    justify-content: space-between;
+    width: 75%;
+
+}
+
+#pokemonImg {
+    height: 50%;
+    width: 50%;
+    margin-bottom: 60px;
+    object-fit: cover;
+}
+
+.infopage {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.information {
+    display: flex;
+    font-weight: bolder;
+    width: 180%;
+    margin-right: -12%;
+    font-size: small;
+    justify-content: space-between;
+}
+
+.information p {
+    opacity: 0.4;
+}
+
+.stats span {
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.stats {
+    display: flex;
+    width: 180%;
+    margin-right: -12%;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+#fetchPokemon {
+    font-family: "poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 1.1em;
+    padding: 8px 25px;
+    border-radius: 5px;
+
+}
+
+#error {
+    color: rgb(252, 0, 0);
+    font-weight: bolder;
+    font-size: 2em;
+
+}
+
+button:hover {
+    background-color: hsl(15, 10%, 80%);
+}
+
+
+
+/* medida queries */
+@media screen and (max-width: 430px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #pokemon {
+        width: 70%;
+        height: 50px;
+    }
+    .card{
+        height: 60%;
+        width: 80%;
+    }
+
+}
